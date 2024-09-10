@@ -13,6 +13,8 @@ The Payment Gateway Service is designed to facilitate seamless payment processin
 - **Transaction Management:** Track and manage payment transactions effectively.
 - **Secure Payment Handling:** Utilize industry-standard security measures to ensure safe transactions.
 
+![Alt text](https://github.com/bharattanwar/PaymentService/blob/e3859d09109b68e29752cd177fa5a28b4e2272df/Screenshot%20(265).png)
+
 ## Getting Started
 
 To get started with the Payment Gateway Service, follow these steps:
