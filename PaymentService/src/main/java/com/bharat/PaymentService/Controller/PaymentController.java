@@ -15,13 +15,15 @@ public class PaymentController {
     private PaymentService paymentService;
 
     @PostMapping()
-    public String doPayment(@RequestBody PaymentRequestDTO paymentRequestDTO) throws RazorpayException{
-        return paymentService.doPayment(paymentRequestDTO.getAmount(),paymentRequestDTO.getOrderId(),
-                paymentRequestDTO.getName(),paymentRequestDTO.getContact(),paymentRequestDTO.getEmail());
+    public String doPayment(@RequestBody PaymentRequestDTO paymentRequestDTO) throws RazorpayException {
+        return paymentService.doPayment(paymentRequestDTO.getAmount(), paymentRequestDTO.getOrderId(),
+                paymentRequestDTO.getName(), paymentRequestDTO.getContact(), paymentRequestDTO.getEmail());
 
     }
-    @GetMapping("/hello")
-    public ResponseEntity<String> hello(){
+
+    @GetMapping("/status")
+    public ResponseEntity<String> status() {
         return ResponseEntity.ok("hello from Bharat tanwar");
     }
+
 }
